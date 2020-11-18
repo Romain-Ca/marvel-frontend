@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+
+// Import containers
+import Home from "./containers/Home";
+
+// Import components
+// import Header from "./components/Header"
+// import Footer from "./components/Footer"
 
 function App() {
   return (
     <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

@@ -1,3 +1,8 @@
+<!-- Special Rules from Marvel -->
+
+1 -Please use the following text on every application screen or web page which displays the API result:
+"Data provided by Marvel. © 2014 Marvel"s
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
