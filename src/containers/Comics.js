@@ -3,17 +3,20 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 
 // Import Components
+import ComicDetails from "../components/ComicDetails";
 
-const Home = () => {
-  const [data, setData] = useState();
+const Comics = ({ apiUrl }) => {
+  const [comics, setComics] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  // Création de la requête
+  const requestUrl = `${apiUrl}comics`;
+
+  // Création de la requête Axios
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3100/comics");
-        console.log(response.data);
-        setData(response.data);
+        const response = await axios.get(requestUrl);
+        setComics(response.data.data);
+        console.log(response.data.data);
         setIsLoading(false);
       } catch (error) {
         console.log(error.message);
@@ -25,17 +28,16 @@ const Home = () => {
   return isLoading ? (
     <Loader
       className="loader"
-      type="Puff"
-      color="#2cb1ba"
+      type="Bars"
+      color="#EF1E22"
       height={90}
       width={90}
     />
   ) : (
     <>
-      <div>Yoyo</div>
-      <div>{data.attributionHTML} </div>
+      <ComicDetails comics={comics} />
     </>
   );
 };
 
-export default Home;
+export default Comics;
