@@ -14,7 +14,7 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="/">
+          <Route path="/comics">
             <Home />
           </Route>
         </Switch>
