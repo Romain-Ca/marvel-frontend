@@ -26,7 +26,7 @@ const ComicDetails = ({ comics }) => {
                 </Link>
 
                 <p>{comics.title}</p>
-                <FavIcons />
+                <FavIcons comics={comics} />
               </div>
             );
           })}

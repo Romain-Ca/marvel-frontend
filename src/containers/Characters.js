@@ -23,7 +23,7 @@ const Characters = ({ apiUrl }) => {
   const [totalPage, setTotalPage] = useState(0);
   // On doit passer en query page et name
   const requestUrl = `${apiUrl}characters?page=${page}&name=${search}`;
-  console.log(requestUrl);
+  // console.log(requestUrl);
 
   const handleClick = (event) => {
     setPage(event.selected + 1);

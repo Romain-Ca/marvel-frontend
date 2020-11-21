@@ -8,6 +8,7 @@ import Characters from "./containers/Characters";
 import CharacterId from "./containers/CharacterId";
 import ComicId from "./containers/ComicId";
 import Test from "./containers/Test";
+import Favorites from "./containers/Favorites";
 
 // Import components
 import Header from "./components/Header";
@@ -31,6 +32,9 @@ function App() {
         <Switch>
           <Route path="/testgif">
             <Test apiUrl={apiUrl} />
+          </Route>
+          <Route path="/favorites">
+            <Favorites apiUrl={apiUrl} />
           </Route>
           <Route path="/character/:id">
             <CharacterId apiUrl={apiUrl} />

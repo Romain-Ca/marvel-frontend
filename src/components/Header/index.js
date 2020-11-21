@@ -20,8 +20,8 @@ const Header = () => {
             <Link to="/comics">
               <li>COMICS</li>
             </Link>
-            <Link to="/">
-              <li>FAVORITE</li>
+            <Link to="/favorites">
+              <li>FAVORITES</li>
             </Link>
           </ul>
         </nav>

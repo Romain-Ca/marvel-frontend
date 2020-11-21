@@ -33,7 +33,7 @@ const CharacterDetails = ({ characters }) => {
                 </Link>
 
                 <p>{character.name}</p>
-                <FavIcons />
+                <FavIcons character={character} />
               </div>
             );
           })}

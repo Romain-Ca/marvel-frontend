@@ -25,5 +25,3 @@ const CharacterDescription = ({ character }) => {
 };
 
 export default CharacterDescription;
-
-// Il faudra faire un .map sur comics.map pour le caroussel...
