@@ -1,5 +1,24 @@
 /* Other rules */
+@import url("./fonts/stylesheet.css");
 
 .main {
   /* pour le background image  */
+  background-image: url("/src/images/Fond1.jpg");
+  font-family: "Marvel";
+}
+
+/* ----------React-Paginate ---------- */
+
+.paginate-container {
+  width: 60vw;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  border: black 0.5px solid;
+}
+
+.paginate {
 }

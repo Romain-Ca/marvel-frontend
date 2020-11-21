@@ -7,10 +7,19 @@ import Comics from "./containers/Comics";
 import Characters from "./containers/Characters";
 import CharacterId from "./containers/CharacterId";
 import ComicId from "./containers/ComicId";
+import Test from "./containers/Test";
 
 // Import components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+// Import fontawesome
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faAngleRight,
+  faAngleLeft,
+  faBolt,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faAngleRight, faAngleLeft, faBolt);
 
 const apiUrl = "http://localhost:3100/";
 
@@ -20,11 +29,14 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route path="/testgif">
+            <Test apiUrl={apiUrl} />
+          </Route>
           <Route path="/character/:id">
-            <Comics apiUrl={apiUrl} />
+            <CharacterId apiUrl={apiUrl} />
           </Route>
           <Route path="/comics/:id">
-            <Comics apiUrl={apiUrl} />
+            <ComicId apiUrl={apiUrl} />
           </Route>
           <Route path="/comics">
             <Comics apiUrl={apiUrl} />

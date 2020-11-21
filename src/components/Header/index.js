@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
-import Logo from "../../images/Logo.png";
+import Logo2 from "../../images/Emblème-Marvel.jpg";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header-top">
         <div className="logo-container">
           <Link to="/">
-            {/* <img className="logo-marvel" src={Logo} alt="logo-marvel" /> */}
+            <img className="logo" src={Logo2} alt="logo-marvel" />
           </Link>
         </div>
         <nav className="navigation-container">
@@ -27,17 +27,6 @@ const Header = () => {
         </nav>
         <div className="login-container">
           <button className="login-button">LOGIN</button>
-        </div>
-      </div>
-      <div className="header-bot">
-        <div className="search-container">
-          <form className="form-container">
-            <input
-              className="input-search"
-              type="text"
-              placeholder="What are you looking for ?"
-            />
-          </form>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
 /* ---------- CHARACTER-DETAILS ---------- */
 
+@import url("../FavIcons/index.css");
+
 .main-container {
   min-height: 80vh;
 }
@@ -27,9 +29,11 @@ h1 {
   padding: 1vw;
   margin: auto;
   width: 15vw;
+  position: relative;
 }
 
 .picture-container {
+  cursor: pointer;
 }
 
 .character-picture {
