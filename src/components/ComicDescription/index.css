@@ -1,0 +1,58 @@
+/* ---------- COMICS-DESCRIPTION ---------- */
+
+.description-container {
+  min-height: 80vh;
+  display: flex;
+  padding: 5%;
+  background-color: rgb(70, 69, 69, 0.8);
+}
+
+.col1 img {
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.col1 {
+  padding: 0.8vw;
+  height: auto;
+  min-height: 60vh;
+  background-color: rgb(70, 69, 69, 0.8);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.col2 {
+  height: auto;
+  padding: 0.8vw;
+  min-height: 60vh;
+  background-color: rgb(70, 69, 69, 0.8);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name-descritpion {
+  color: black;
+  font-size: 60px;
+  text-align: center;
+  margin: 20px;
+}
+
+.description-chara {
+  color: black;
+  font-size: 30px;
+  margin: 20px;
+}
+
+span {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.comics-list {
+  margin: 20px;
+}

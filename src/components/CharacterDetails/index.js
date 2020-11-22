@@ -41,7 +41,6 @@ const CharacterDetails = ({ characters }) => {
           {/* Fin du map */}
         </div>
       </div>
-      <nav className="pagination-container"></nav>
     </section>
   );
 };

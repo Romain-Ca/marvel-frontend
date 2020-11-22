@@ -3,6 +3,7 @@
 }
 
 .favorites-container {
+  position: relative;
 }
 
 h2 {
@@ -15,4 +16,11 @@ h2 {
 }
 
 .chara-picture {
+}
+
+.chara-descritpion {
+}
+
+.chara-favorites {
+  position: absolute;
 }

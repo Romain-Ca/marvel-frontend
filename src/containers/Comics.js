@@ -3,6 +3,7 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 import ReactPaginate from "react-paginate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Gif from "../images/source.gif";
 
 // Import Components
 import ComicDetails from "../components/ComicDetails";
@@ -43,13 +44,16 @@ const Comics = ({ apiUrl }) => {
   }, [page, search]);
 
   return isLoading ? (
-    <Loader
-      className="loader"
-      type="Bars"
-      color="#EF1E22"
-      height={90}
-      width={90}
-    />
+    // <Loader
+    //   className="loader"
+    //   type="Bars"
+    //   color="#EF1E22"
+    //   height={90}
+    //   width={90}
+    // />
+    <div>
+      <img src={Gif} alt="gif" />
+    </div>
   ) : (
     <>
       <Search search={search} setSearch={setSearch} />

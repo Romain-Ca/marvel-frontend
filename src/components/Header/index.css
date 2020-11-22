@@ -9,7 +9,7 @@
 /* ----- Header-Top ----- */
 .header-top {
   height: 100%;
-  background-color: black;
+  background-color: rgba(7, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,11 +21,13 @@
   height: 50px;
   box-sizing: border-box;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   height: 60px;
-  margin-left: 50px;
+  margin-left: 10%;
 }
 
 .navigation-container {
@@ -39,14 +41,21 @@
   justify-content: space-around;
 }
 
+.navigation a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+
 .navigation li {
   text-align: center;
   font-weight: 700;
   color: white;
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 
 .navigation li:hover {
-  background-color: rgb(230, 197, 197);
+  color: gray;
 }
 
 .login-container {
@@ -58,13 +67,22 @@
 
 .login-button {
   background-color: #f11e22;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  background-color: rgb(0 0 0);
+  font-family: "Marvel";
+  font-size: 30px;
   font-weight: 600;
   border-radius: 12px;
+  border: none;
   cursor: pointer;
+  margin-right: 2%;
 }
 
 .login-button:hover {
-  background-color: #e0686a;
+  background-color: #272525;
 }
 
 /* ----- Media-Queries ----- */
