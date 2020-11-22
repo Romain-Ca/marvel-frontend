@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Loader from "react-loader-spinner";
 import ReactPaginate from "react-paginate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Gif from "../images/source.gif";
@@ -47,13 +46,6 @@ const Characters = ({ apiUrl }) => {
   }, [page, search]);
 
   return isLoading ? (
-    // <Loader
-    //   className="loader"
-    //   type="Bars"
-    //   color="#EF1E22"
-    //   height={90}
-    //   width={90}
-    // />
     <div>
       <img src={Gif} alt="gif" />
     </div>

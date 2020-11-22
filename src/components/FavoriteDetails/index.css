@@ -1,26 +1,78 @@
 /* ---------- FAVORITE-DETAILS ---------- */
 .main-container {
+  min-height: 80vh;
 }
 
-.favorites-container {
-  position: relative;
+.padding-container {
+  margin: 0 10%;
+  height: auto;
+  min-height: 60vh;
+  background-color: rgb(70, 69, 69, 0.8);
+  border-radius: 15px;
 }
 
 h2 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  margin: 40px 0;
+  padding: 10px;
 }
 
-.characters-container {
+.favorites-list {
+  margin: 30px auto auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-.comic-container {
+.favorites-container {
+  padding: 0.8vw;
+  margin: auto;
+  width: 235px;
+  position: relative;
 }
 
 .chara-picture {
-}
-
-.chara-descritpion {
+  height: 360px;
+  width: 235px;
+  object-fit: cover;
 }
 
 .chara-favorites {
   position: absolute;
+}
+
+.chara-name {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.icon-container {
+  border: 1px white solid;
+  padding: 6px 3px 2px 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  background-color: #fff;
+  height: 25px;
+  width: 25px;
+}
+
+.bolt {
+  color: goldenrod;
+  font-weight: 900;
+  text-align: center;
+  font-size: 27px;
+  margin-left: 5px;
+}
+
+.bolt:hover {
+  color: rgb(199, 160, 63);
 }

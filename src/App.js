@@ -7,7 +7,6 @@ import Comics from "./containers/Comics";
 import Characters from "./containers/Characters";
 import CharacterId from "./containers/CharacterId";
 import ComicId from "./containers/ComicId";
-import Test from "./containers/Test";
 import Favorites from "./containers/Favorites";
 
 // Import components
@@ -30,9 +29,6 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/testgif">
-            <Test apiUrl={apiUrl} />
-          </Route>
           <Route path="/favorites">
             <Favorites apiUrl={apiUrl} />
           </Route>

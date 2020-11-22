@@ -24,7 +24,7 @@ const FavIcons = ({ character, comics }) => {
           } else if (character) {
             setFavToken(false);
             Cookie.remove(`${character.id}`);
-          } else {
+          } else if (comics) {
             setFavToken(false);
             Cookie.remove(`${comics.id}`);
           }
