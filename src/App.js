@@ -22,7 +22,7 @@ import {
 library.add(faAngleRight, faAngleLeft, faBolt);
 
 // const apiUrl = "http://localhost:3100/";
-const apiUrl = "https://marvel-backend-reacteur.herokuapp.com";
+const apiUrl = "https://marvel-backend-reacteur.herokuapp.com/";
 
 function App() {
   return (
@@ -54,4 +54,4 @@ function App() {
 
 export default App;
 
-// Check test test
+// Check test
