@@ -22,6 +22,7 @@ import {
 library.add(faAngleRight, faAngleLeft, faBolt);
 
 const apiUrl = "http://localhost:3100/";
+// const apiUrl = "https://marvel-backend-reacteur.herokuapp.com/";
 
 function App() {
   return (
