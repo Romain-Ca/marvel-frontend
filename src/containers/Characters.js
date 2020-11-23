@@ -22,7 +22,7 @@ const Characters = ({ apiUrl }) => {
   const [page, setPage] = useState(1);
   const [totalPage, setTotalPage] = useState(0);
   // On doit passer en query page et name
-  const requestUrl = `${apiUrl}characters?page=${page}&name=${search}`;
+  const requestUrl = `${apiUrl}?page=${page}&name=${search}`;
   // console.log(requestUrl);
 
   const handleClick = (event) => {
@@ -71,3 +71,5 @@ const Characters = ({ apiUrl }) => {
 };
 
 export default Characters;
+
+// test
