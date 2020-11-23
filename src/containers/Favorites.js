@@ -10,7 +10,7 @@ const Favorites = ({ apiUrl }) => {
   const [characters, setCharacters] = useState([]);
   const [comics, setComics] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const requestUrlCharacter = `${apiUrl}characters?page=${page}&name=${search}`;
+  const requestUrlCharacter = `${apiUrl}?page=${page}&name=${search}`;
   // console.log(requestUrlCharacter);
   const requestUrlComics = `${apiUrl}comics?page=${page}&title=${search}`;
   let allCookies = [];
@@ -57,3 +57,5 @@ const Favorites = ({ apiUrl }) => {
 };
 
 export default Favorites;
+
+// test
